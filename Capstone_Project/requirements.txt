@@ -1,0 +1,11 @@
+This code was generated in Python v. 3.0
+
+This code requires the following packages to be installed: 
+
+statistics
+pandas v2.0.0
+numpy v1.24
+matplotlib.pyplot v3.5.3
+math 
+sys
+time
