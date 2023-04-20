@@ -25,9 +25,22 @@ b.	δ18O values within 0.3‰ of the known/established value
 c.	Δ17O values within 0.015‰ of the known/established value
 
 The final datasheet that is provided from the code for both the standards run and analysis run includes a comparison section that allows for easy determination if the preceding data benchmarks are met. 
-	This code is designed to be as fully automated as possible. As such, only the following sections should require editing: 1) Section 3 for importing raw Standards datasheet; 2) Section 37 for determining where to export csv files to; 3) Section 43 to set which conditioning water samples to remove; 4) Section 46 to determine where to export xlsx file to; 5) Section 48 for importing raw Standards datasheet; 6) Sections 63-70 depending on what in-house water standards are used by the lab; 7) Sections 78-79 for determining where to export csv files to and to remove the two in-house standards from the list; 8) Section 83 to set which conditioning water samples to remove; and 9) Section 87 to determine where to export xlsx file to. 
+
+**Sections That Require Manual Edits**
+
+This code is designed to be as fully automated as possible. As such, only the following sections should require editing: 
+1) Section 3 for importing raw Standards datasheet; 
+2) Section 37 for determining where to export csv files to; 
+3) Section 43 to set which conditioning water samples to remove; 
+4) Section 46 to determine where to export xlsx file to; 
+5) Section 48 for importing raw Standards datasheet; 
+6) Sections 63-70 depending on what in-house water standards are used by the lab; 
+7) Sections 78-79 for determining where to export csv files to and to remove the two in-house standards from the list; 
+8) Section 83 to set which conditioning water samples to remove; and 
+9) Section 87 to determine where to export xlsx file to. 
 
 **FILES**
+
 Capstone_Project. .ipynb – Jupyter notebook file containing the Python code for correcting and finalizing standards and analysis run raw data
 
 StandardsRun_1.csv – CSV file containing raw data from a standards run completed on 30-January-2023. This file should be imported into the code via Section 3 of the code. This csv should only be used in combination with the AnlaysisRun_1 file.
@@ -45,10 +58,12 @@ AnalysisRun_3.csv – CSV file containing raw data from an analysis run complete
 Requirements.txt – Text file containing the python and package requirements to run the code. 
 
 **OUTPUTS**
+
 csv.files – For each standards and analysis run, csv files will be generated for each individual water sample analyzed during the run. These csv files contain all the variables measured by the CRDS instrument and are mainly generated as a backup source if further analysis was ever required. These files are generated in the following format: SampleName_Day_Year_Month.csv 
 .xlsx files – For each standards and analysis run, a single xlsx file will be generated that contains all the finalized data for each water sample as a sheet within the xlsx file. These sheets only contain the variables of interest and are meant to be used for publication and for generating larger compiled datasheets. These files are generated in the following format: Standards_Day_Year_Month.xlsx or Analysis_Run_Day_Year_Month.xlsx. 
 
 **TYPES OF WATERS FOR ANALYSIS**
+
 Internationally accepted water standards – VSMSOW (Vienna Mean Standard Ocean Water) and SLAP (Standard Light Antarctic Precipitation Water)
 In-house water standards – USGS47 and USGS50 (Waters provided by the United States Geological Survey for interlaboratory comparison)
 Control waters – USGS46, USGS48, Real_KD (Kona Deep brand water), SeatW (Tap water from Seattle, WA), MissMT (Tap water from Missoula, MT), IceLava (Iceland Lava brand water), SupremeBoil (water boiled for 3 days to enrich δ18O value), MegaBoil (water boiled for 5 days to enrich δ18O value)
