@@ -1,0 +1,7 @@
+name: Capstone
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - pandas
+prefix: /Users/Emma/opt/anaconda3/envs/Capstone
