@@ -70,4 +70,4 @@ Control waters – USGS46, USGS48, Real_KD (Kona Deep brand water), SeatW (Tap w
 Conditioning vials – DummyKD, SuperBoil, UltraBoil, USGS46.25, USGS46.5, USGS46.75, SLAP.25, SLAP.5, SLAP.75 (conditioning vials should be removed via the Python code during the process)
 
 
-![Table1](../images/Table1.jpg)
+![Table1](C:/Users/zacha/Dropbox/PhD ODU/Courses/Spring 2023/OEAS895/Capstone_Project/Table1.jpg)
