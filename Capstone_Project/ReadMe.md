@@ -68,3 +68,6 @@ Internationally accepted water standards – VSMSOW (Vienna Mean Standard Ocean 
 In-house water standards – USGS47 and USGS50 (Waters provided by the United States Geological Survey for interlaboratory comparison)
 Control waters – USGS46, USGS48, Real_KD (Kona Deep brand water), SeatW (Tap water from Seattle, WA), MissMT (Tap water from Missoula, MT), IceLava (Iceland Lava brand water), SupremeBoil (water boiled for 3 days to enrich δ18O value), MegaBoil (water boiled for 5 days to enrich δ18O value)
 Conditioning vials – DummyKD, SuperBoil, UltraBoil, USGS46.25, USGS46.5, USGS46.75, SLAP.25, SLAP.5, SLAP.75 (conditioning vials should be removed via the Python code during the process)
+
+
+![Table1](../images/Table1.jpg)
