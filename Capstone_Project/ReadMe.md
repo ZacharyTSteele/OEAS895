@@ -30,14 +30,14 @@ The final datasheet that is provided from the code for both the standards run an
 
 This code is designed to be as fully automated as possible. As such, only the following sections should require editing: 
 1) Section 3 for importing raw Standards datasheet; 
-2) Section 37 for determining where to export csv files to; 
-3) Section 43 to set which conditioning water samples to remove; 
-4) Section 46 to determine where to export xlsx file to; 
-5) Section 48 for importing raw Standards datasheet; 
-6) Sections 63-70 depending on what in-house water standards are used by the lab; 
-7) Sections 78-79 for determining where to export csv files to and to remove the two in-house standards from the list; 
-8) Section 83 to set which conditioning water samples to remove; and 
-9) Section 87 to determine where to export xlsx file to. 
+2) Section 35 for determining where to export csv files to; 
+3) Section 40 to set which conditioning water samples to remove; 
+4) Section 43 to determine where to export xlsx file to; 
+5) Section 45 for importing raw Standards datasheet; 
+6) Sections 58-65 depending on what in-house water standards are used by the lab; 
+7) Sections 73-74 for determining where to export csv files to and to remove the two in-house standards from the list; 
+8) Section 78 to set which conditioning water samples to remove; and 
+9) Section 82 to determine where to export xlsx file to. 
 
 **FILES**
 
@@ -57,14 +57,28 @@ AnalysisRun_3.csv – CSV file containing raw data from an analysis run complete
 
 Requirements.txt – Text file containing the python and package requirements to run the code. 
 
+Values.py - Py file that loads in the known and established values for water standards and samples routinely measured in the lab
+
+Table1.jpg - Example image of an analysis run in a Table format
+
 **OUTPUTS**
 
 csv.files – For each standards and analysis run, csv files will be generated for each individual water sample analyzed during the run. These csv files contain all the variables measured by the CRDS instrument and are mainly generated as a backup source if further analysis was ever required. These files are generated in the following format: SampleName_Day_Year_Month.csv 
+
 .xlsx files – For each standards and analysis run, a single xlsx file will be generated that contains all the finalized data for each water sample as a sheet within the xlsx file. These sheets only contain the variables of interest and are meant to be used for publication and for generating larger compiled datasheets. These files are generated in the following format: Standards_Day_Year_Month.xlsx or Analysis_Run_Day_Year_Month.xlsx. 
+
+**Folders**
+
+Standards_Run_Files - Location where all standards run csv and xlsx files should be imported into
+
+Analysis_Run_Files - Location where all analysis run csv and xlsx files should be imported into
 
 **TYPES OF WATERS FOR ANALYSIS**
 
 Internationally accepted water standards – VSMSOW (Vienna Mean Standard Ocean Water) and SLAP (Standard Light Antarctic Precipitation Water)
+
 In-house water standards – USGS47 and USGS50 (Waters provided by the United States Geological Survey for interlaboratory comparison)
+
 Control waters – USGS46, USGS48, Real_KD (Kona Deep brand water), SeatW (Tap water from Seattle, WA), MissMT (Tap water from Missoula, MT), IceLava (Iceland Lava brand water), SupremeBoil (water boiled for 3 days to enrich δ18O value), MegaBoil (water boiled for 5 days to enrich δ18O value)
+
 Conditioning vials – DummyKD, SuperBoil, UltraBoil, USGS46.25, USGS46.5, USGS46.75, SLAP.25, SLAP.5, SLAP.75 (conditioning vials should be removed via the Python code during the process)
